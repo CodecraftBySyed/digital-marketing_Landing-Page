@@ -1,0 +1,282 @@
+html.dark {
+  background-color: #111827;
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Update dark mode background colors for Tailwind classes */
+html.dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+html.dark .bg-gray-50 {
+  background-color: #111827 !important;
+}
+
+html.dark .bg-gray-100 {
+  background-color: #1e293b !important;
+}
+
+html.dark .bg-gray-900 {
+  background-color: #111827 !important;
+}
+
+/* Update dark mode text colors for Tailwind classes */
+html.dark .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+html.dark .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+html.dark .text-gray-600 {
+  color: #e5e7eb !important;
+}
+
+html.dark .text-gray-100 {
+  color: #e5e7eb !important;
+}
+
+/* Keep these safe color and theme enhancements */
+html.dark .text-blue-600 {
+  color: #2563eb !important;
+}
+
+html.dark .bg-blue-600 {
+  background-color: #2563eb !important;
+}
+
+html.dark .bg-blue-700 {
+  background-color: #9333ea !important;
+}
+
+html.dark .hover\:bg-blue-100:hover {
+  background-color: #2563eb !important;
+}
+
+html.dark .hover\:text-blue-400:hover {
+  color: #9333ea !important;
+}
+
+html.dark .border-blue-500 {
+  border-color: #2563eb !important;
+}
+
+/* Keep scroll animation styling */
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-in-view {
+  opacity: 1;
+  transform: none;
+}
+
+.hero-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb 0%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  opacity: 0.3;
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100%) rotate(25deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+/* Scroll Animation Styles */
+.pre-animation {
+  opacity: 0;
+  visibility: hidden;
+}
+
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fix for dark mode service cards */
+html.dark .card {
+  background-color: #1e293b !important;
+  border: 1px solid #2d3748;
+}
+
+/* Dark mode for the navigation bar */
+html.dark nav {
+  border-bottom-color: #374151 !important; /* Darker border for nav */
+}
+
+/* Dark mode for the navigation toggle button */
+html.dark #darkModeToggle {
+  background-color: #1e293b !important;
+  color: #f9fafb !important;
+  border-color: #374151 !important;
+}
+
+html.dark #darkModeToggle:hover {
+  background-color: #374151 !important;
+}
+
+/* Ensure icon color on dark mode toggle updates if needed */
+html.dark #darkModeToggle .fa-moon,
+html.dark #darkModeToggle .fa-sun {
+  color: #f9fafb !important;
+}
+
+/* Ensure nav link hover color is correct in dark mode */
+html.dark .hover\:text-blue-600:hover {
+  color: #60a5fa !important; /* Lighter blue for better visibility on dark nav */
+}
+
+/* Generic class for text that is dark on light surfaces, to become light on dark surfaces */
+.text-on-light-surface {
+  color: #111827; /* Default for light mode */
+}
+
+html.dark .text-on-light-surface {
+  color: #f9fafb !important; /* Override for dark mode */
+}
+
+.subtle-text-on-light-surface {
+  color: #374151; /* Default gray-700 for light mode */
+}
+
+html.dark .subtle-text-on-light-surface {
+  color: #e5e7eb !important; /* Override for dark mode (lightGray) */
+}
+
+/* Dark mode for 'Why Choose Us' section cards */
+html.dark .bg-blue-50 {
+  background-color: #1e3a8a !important; /* Darker blue */
+}
+
+html.dark .bg-green-50 {
+  background-color: #065f46 !important; /* Darker green */
+}
+
+html.dark .bg-purple-50 {
+  background-color: #5b21b6 !important; /* Darker purple */
+}
+
+html.dark .bg-yellow-50 {
+  background-color: #713f12 !important; /* Darker yellow */
+}
+
+/* Ensure text in 'Why Choose Us' cards is light in dark mode */
+html.dark .flex.items-start.gap-4.p-6 .font-bold,
+html.dark .flex.items-start.gap-4.p-6 p {
+  color: #f9fafb !important;
+}
+
+/* Dark mode for 'Client Testimonials' section */
+html.dark section.py-20.px-6.bg-gray-50 {
+  background-color: #111827 !important;
+}
+
+/* Testimonial card adjustments for dark mode */
+html.dark .bg-white.dark\:bg-gray-800.p-8.rounded-2xl {
+  background-color: #1e293b !important; /* Consistent dark card background */
+  border-color: #4b5563 !important; /* A slightly lighter border */
+}
+
+html.dark .border-l-4.border-blue-600.dark\:border-blue-400 {
+  border-left-color: #60a5fa !important; /* Lighter blue for dark mode border */
+}
+
+html.dark .border-l-4.border-purple-600.dark\:border-green-400 {
+  border-left-color: #a78bfa !important; /* Lighter purple for dark mode border */
+}
+
+/* Ensure hover effects work properly in dark mode */
+html.dark .hover\:bg-purple-600:hover {
+  background-color: #9333ea !important;
+}
