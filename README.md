@@ -55,4 +55,4 @@ Live Demo: [https://your-netlify-link.netlify.app](https://your-netlify-link.net
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/digitalboost-landing-page.git
+git clone https://github.com/CodecraftBySyed/digital-marketing_Landing-Page.git
