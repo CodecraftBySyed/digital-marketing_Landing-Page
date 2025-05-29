@@ -36,7 +36,7 @@ This project uses:
 
 ## Demo
 
-Live Demo: [https://your-netlify-link.netlify.app](https://your-netlify-link.netlify.app)
+Live Demo: [https://your-netlify-link.netlify.app](https://demo-digital-marketing.netlify.app/)
 
 ## Features
 
